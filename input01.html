@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+</head>
+<body>
+    <h1>온라인 서점 회원가입 페이지</h1>
+        
+    <form action="#" method="post"> 
+        <!-- 사용자가 입력하는 입력 양식 --> 
+        <fieldset>
+          <legend><h4>회원 기본 정보</h4></legend>
+            <label for="text">아이디 : </label> 
+            <input type="text" name="text" placeholder="ID 입력"><br>
+            <br>
+            <label for="text">비밀번호 : </label> 
+            <input type="password" name="password" placeholder="비밀번호 입력"><br> 
+            <br>
+            <label for="text">이름 : </label> 
+            <input type="name" name="name" placeholder="이름 입력"><br> 
+            <br>
+        </fieldset>
+        
+    
+        <!-- 보이지 않는 입력 양식(줄을 띄우는 용도로 쓰고 있음) --> 
+        <input type="hidden" name="hidden" value="hidden"><br>
+        
+         <fieldset>
+            <!-- 연락처 -->
+            <legend>연락처</legend>
+            <label for="text">이메일 : </label>
+            <input type="text" name = "text" placeholder="예시) 000000@naver.com"><br>
+            <br>
+            <label for="text">휴대전화 : </label>
+            <select name="text" id="number">
+                <option value="010">010</option>
+                <option value="031">031</option>
+            </select>
+            <input type="text" name = "text"> -
+            <input type="text" name = "text"><br>
+         </fieldset>    
+        
+         <input type="hidden" name="hidden" value="hidden"><br>
+        
+         <fieldset>
+            <legend>추가 정보</legend>
+            <label for="birthday">생년월일 : </label>
+            <input type="date"><br>
+            <br>
+            <!-- 라벨 생성후 성별을 라디오 태그로 선택 -->
+            <label for="text" type = "text">성별 : </label>
+            <input id= "man" type="radio" name="gender" value="m">
+            <label for= "man">남자</label>
+           <input id= "woman" type="radio" name="gender" value="w">
+            <label for= "woman">여자</label>
+            <input id = "nothing" type="radio" name = "gender" value = "n">
+            <label for="nothing">모르겠음</label><br>
+            <br>
+            <!-- 관심사 -->
+            <label for="text">관심사 : </label>
+            <input type="checkbox" name = "Java" value = "Java">
+            <label for="Java">Java</label>
+            <input type="checkbox" name = "HTML" value = "HTML">
+            <label for="HTML">HTML</label>  
+            <input type="checkbox" name="CSS" value="CSS">
+            <label for="CSS">CSS</label>
+            <input type="checkbox" name="JavaScript" value="JavaScript">
+            <label for="JavaScript">JavaScript</label>
+            <input type="checkbox" name="Algorithm" value="Algorithm">
+            <label for="Algorithm">Algorithm</label><br>
+            <br>
+            <!-- 본인사진 선택하기 -->
+            <label for="picture">본인 사진 : </label>
+            <input type="button" value ="파일 선택"> 선택된 파일 없음
+
+         </fieldset>
+        <br>
+         <label for="reset"></label>
+         <input type="button" name="reset" value="초기회">
+         <label for="signin"></label>
+         <input type="button" name="reset" value="회원가입">
+  
+</body>
+</html>
