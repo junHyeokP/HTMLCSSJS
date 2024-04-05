@@ -1,0 +1,28 @@
+* {
+    color: orange;
+    
+}
+h1, h3 {
+    color:blue;
+    background-color: skyblue;
+}
+
+.description {
+    color:brown;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+#degree {
+    color:black
+    
+}
+
+h1 {
+    color: aliceblue;
+}
+
+.a { font-size: 1.0em;}
+.b { font-size: 1.5em;}
+.c { font-size: 2.0em;}
+
+.parent { font-size: 30px;}
