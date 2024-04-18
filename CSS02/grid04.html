@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-template-areas</title>
+  <link rel="stylesheet" href="grid-basic.css">
+  <style>
+    .grid-container {
+        display : grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-template-areas :
+       "sidebar header header"
+       "sidebar content content"
+       "sidebar footer footer";
+    }
+   #header {
+        grid-area : header;
+        background-color: orange;
+    }
+
+    #sidebar {
+        grid-area : sidebar;
+        background-color: yellowgreen;
+    }
+
+    #content {
+        grid-area : content;
+        background-color: blue;
+    }
+
+    #footer {
+        grid-area : footer;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <p id="header" class="grid-item-1">header</p>
+    <p id="sidebar" class="grid-item-2">sidebar</p>
+    <p id="content" class="grid-item-1">content</p>
+    <p id="footer" class="grid-item-2">footer</p>
+  </div>
+</body>
+</html>
