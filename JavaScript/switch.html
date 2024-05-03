@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <script>
+        let menulist = Number(prompt("1. 아메리카노\n2. 카페라떼\n3. 카푸치노\n메뉴번호를 선택하세요."));
+        
+        switch (menulist) {
+            case 1:
+            case 2:
+            case 3:
+                let numCoffee = Number(prompt("몇 잔을 주문하시겠습니까?"));
+                alert(`${menulist}번 메뉴를 ${numCoffee}잔 주문하였습니다.`);
+                break;        
+            default : alert("없는 메뉴입니다.")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
