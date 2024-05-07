@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object test</title>
+</head>
+<body>
+    <script>
+        const person = {
+  name:{
+    firstName:"Gildong",
+    lastName:"Hong"
+  },
+  likes:["apple", "samsung"],
+  printHello:function(){
+    return "hello";
+  }
+};
+
+while(person["name"]); // { firstName: 'Gildong', lastName: 'Hong' }
+console.log(person["name"]["firstName"]); // Gildong
+console.log(person["likes"]); // [ 'apple', 'samsung' ]
+console.log(person["likes"][0]); // apple
+console.log(person["likes"][1]); // samsung
+console.log(person["printHello"]); // [Function: printHello]
+console.log(person["printHello"]()); // hello
+
+console.log(person.name.lastName); // Hong 
+console.log(person.likes[0]);  // apple
+console.log(person.printHello());  // hello
+// console.log(person."name"); // SyntaxError: Unexpected string
+    </script>
+</body>
+</html>
