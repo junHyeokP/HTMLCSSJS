@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clickEvent()">인라인 방식</button><br>
+<button class="property">프로퍼티 리스너 방식</button><br>
+<button class="add">addEventListener 방식</button><br>
+<button class="arrow">화살표 함수</button><br>
+
+<br>
+<input type="text" onfocus="focusEvent()" onblur="blurEvent()"><br>
+<br>
+<script>
+  function clickEvent() {
+    alert("인라인 방식");
+  }
+  const btnEl1 = document.querySelector(".property");
+  btnEl1.onclick = function () {
+    alert("프로퍼티 리스너 방식");
+  }
+
+  const btnEl2 = document.querySelector(".add");
+  btnEl2.addEventListener("click", function () {
+     alert("addEventListener 방식 : 익명함수");
+  })
+
+  btnEl3 = document.querySelector(".arrow");
+  btnEl3.addEventListener("click", () => {
+    alert("화살표 함수");
+  })
+
+  function focusEvent() {
+    console.log("focus on");
+  }
+  function blurEvent() {
+    console.log("focus out");
+  }
+</script>
+</body>
+</html>
