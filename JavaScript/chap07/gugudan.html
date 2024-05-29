@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>구구단</h1>
+    <!--form 요소는 사용자에게 값을 입력받아 이를 서버에 전달해준다-->
+    <form name = "gugudan">
+        <input type="number" name = "gugu" placeholder="출력할 구구단 입력"> 단 <input type="button" id = "e" value="계산하기">
+    </form>
+    <hr>
+    <div class = "ggd">
+        
+    </div>
+
+    <script>
+        
+        // id "e"가 있는 블록에서 버튼 이벤트 인식시 함수 실행
+        // querySelector() 메서드는 주로 요소 노드를 1개만 선택할 때 사용함
+        // 2개 이상 선택하고 싶을땐 뒤에 All을 붙이면 됨
+        //이벤트 등록, btn노드에서 이벤트 인식시 함수를 실행 (여기선 화살표 함수를 사용했다)
+        e.addEventListener("click", () => {
+         // 숫자를 입력받을때 변수에 저장 (특정 name이 담긴 input 태그에서 입력한 value값을 가져옴)
+         const num = document.gugudan.gugu.value;          
+            
+         // div에 ddg라는 class로 붙여놓기 
+         // class나 태그명으로 하면 HTMLCollection객체로 여러 요소들이 한꺼번에 선택됨
+         // HTMLCollection은 유사 배열이라서 배열의 인덱스에 하나씩 접근이 가능하다고 함
+         const resultDiv = document.querySelector(".ggd");
+         resultDiv.innerHTML = "";
+
+            for(let i = 1; i <= 9; i++) {
+                resultDiv.innerHTML += `${num} x ${i} = ${num * i} <br>`
+           }
+           
+        })
+        
+    </script>
+</body>
+</html>
