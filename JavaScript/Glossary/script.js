@@ -30,10 +30,3 @@ function searchTerm() {
         output.innerHTML = '용어를 찾을 수 없습니다.';
     }
 }
-
-//삭제 
-
-function deleteTerm() {
-    const term = document.getElementById('term').value.trim();
-
-}
